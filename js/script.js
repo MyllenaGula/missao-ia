@@ -1,3 +1,5 @@
+import {aleatorio} from ‘./aleatorio.js’;
+import {perguntas} from ‘./perguntas.js;
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -5,19 +7,17 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
-        enunciado: "Qual fator desempenha o papel mais determinante na persistência da desigualdade salarial?
-",
+        enunciado: "Qual fator desempenha o papel mais determinante na persistência da desigualdade salarial?",
+        Alternativas [
             {
-                texto: "A disparidade é mantida por barreiras estruturais e discriminação histórica, que dificultam o acesso de grupos minoritários a cargos de alta liderança e exigem políticas públicas e transparência corporativa para correção.
-",
-                afirmacao: "Visão voltada às Ciências Sociais e aos Direitos Humanos, focada em equidade social e em soluções sistêmicas regulatórias.",
-                "Sua visão está voltada às ciências sociais, focado em equidade social"
+                texto: "A disparidade é mantida por barreiras estruturais e discriminação histórica, que dificultam o acesso de grupos minoritários a cargos de alta liderança e exigem políticas públicas e transparência corporativa para correção.",
+                afirmacao: ["Visão voltada às Ciências Sociais e aos Direitos Humanos, focada em equidade social e em soluções sistêmicas regulatórias.",
+                "Sua visão está voltada às ciências sociais, focado em equidade social"]
             },
             {
-                texto:  "A variação salarial decorre principalmente de assimetrias no investimento em capital humano, como nível de escolaridade, especialização técnica e diferenças de produtividade entre setores da economia.
-",
-                afirmacao: "Visão voltada  à Economia de Mercado e à Gestão Estratégica, focada no mérito individual, na capacitação profissional e na dinâmica de oferta e demanda.",
-                "Sua visão está voltada para a economia de mercado e gestão estratégica"
+                texto:  "A variação salarial decorre principalmente de assimetrias no investimento em capital humano, como nível de escolaridade, especialização técnica e diferenças de produtividade entre setores da economia.",
+                afirmacao: ["Visão voltada  à Economia de Mercado e à Gestão Estratégica, focada no mérito individual, na capacitação profissional e na dinâmica de oferta e demanda.",
+                "Sua visão está voltada para a economia de mercado e gestão estratégica"]
             }    
            
         ]
@@ -28,13 +28,13 @@ const perguntas = [
             alternativas: [
                 {
                     texto: "A energia geotérmica precisa ser mais explorada visto que utiliza o calor interno da terra, pois não depende do clima e é inesgotável.",
-                    afirmacao: "Você demonstra um perfil  de pesquisador e inovador que busca por meio da inovação soluções para o meio ambiente e sustentabilidade das gerações posteriores.",
-                    "Você tem perfil de pesquisador e inovador, que busca soluções inovadoras para o meio ambiente"
+                    afirmacao: ["Você demonstra um perfil  de pesquisador e inovador que busca por meio da inovação soluções para o meio ambiente e sustentabilidade das gerações posteriores.",
+                    "Você tem perfil de pesquisador e inovador, que busca soluções inovadoras para o meio ambiente"]
                 },
                 {
                     texto:  "Seria interessante explorar primeiramente fontes renováveis exotérmicas, em segundo plano utilizar a energia geotérmica apesar dos custos elevados de explorações e possibilidades de contaminação de rios. ",
-                    afirmacao: "Você é uma pessoa que dá ênfase em priorizar os recursos disponíveis, pensando no meio ambiente e sem descartar o viés econômico.",
-                    "Você prioriza os recursos disponíveis, pensando no meio ambiente"
+                    afirmacao: ["Você é uma pessoa que dá ênfase em priorizar os recursos disponíveis, pensando no meio ambiente e sem descartar o viés econômico.",
+                    "Você prioriza os recursos disponíveis, pensando no meio ambiente"]
                 }    
                
             ]
@@ -45,14 +45,14 @@ const perguntas = [
             alternativas: [
                 {
                     texto: "Na maior parte do tempo, com certeza impacta, pois é a partir da autoestima que temos um olhar positivo ou negativo sobre nossas ações diárias. Sempre estou em busca de mais autoconhecimento.",
-                    afirmacao: "Você tem consciência que é importante ter uma boa auto-estima e procura se aprofundar mais sobre o assunto, vendo a vida de um jeito positivo."
-                    "VocÊ sabe da importância da auto estima e procura se aprofundar mais sobreo assunto"
+                    afirmacao: ["Você tem consciência que é importante ter uma boa auto-estima e procura se aprofundar mais sobre o assunto, vendo a vida de um jeito positivo."
+                    "VocÊ sabe da importância da auto estima e procura se aprofundar mais sobreo assunto"]
                 },
                 {
                     texto:    "Apenas ocasionalmente ou raramente. Às vezes minha autoestima oscila e isso pode afetar negativamente minha qualidade de vida em certas ocasiões.",
                
-                    afirmacao: "Você demomostra que precisa se conhecer mais e mostra uma consciência de uma crescente necessidade de cuidar mais da própria percepção e bem-estar emocional."
-                    "Você precisa se conhecer mais e mostra uma consciencia de uma crescente necessidade de cuidar mais da própria percepção."
+                    afirmacao: ["Você demomostra que precisa se conhecer mais e mostra uma consciência de uma crescente necessidade de cuidar mais da própria percepção e bem-estar emocional."
+                    "Você precisa se conhecer mais e mostra uma consciencia de uma crescente necessidade de cuidar mais da própria percepção."]
                 }    
                
             ]
