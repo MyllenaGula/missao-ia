@@ -1,7 +1,7 @@
 export const perguntas = [
     {
         enunciado: "Qual fator desempenha o papel mais determinante na persistência da desigualdade salarial?",
-            alternativas: [
+        alternativas: [
         {
                 texto: "A disparidade é mantida por barreiras estruturais e discriminação histórica, que dificultam o acesso de grupos minoritários a cargos de alta liderança e exigem políticas públicas e transparência corporativa para correção.",
                 afirmacao: "Visão voltada às Ciências Sociais e aos Direitos Humanos, focada em equidade social e em soluções sistêmicas regulatórias.",
